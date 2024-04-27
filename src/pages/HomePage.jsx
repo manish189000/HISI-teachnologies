@@ -4,6 +4,7 @@ import HeroSectionComponent from "../components/HeroSectionComponent";
 import ServiceComponent from "../components/ServiceComponent";
 import AboutUsComponent from "../components/AboutUsComponent";
 import ContactComponent from "../components/ContactComponent";
+import FooterComponent from "../components/FooterComponent";
 const HomePage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePage = () => {
       <ServiceComponent />
       <AboutUsComponent />
       <ContactComponent />
+      <FooterComponent />
     </>
   );
 };
