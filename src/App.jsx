@@ -11,6 +11,7 @@ function App() {
       <Router>
         <div>
           <NavbarComponent />
+          {/* <FooterComponent /> */}
           <Routes>
             <Route path="/" element={<HomePage />} />
           </Routes>
@@ -23,7 +24,7 @@ function App() {
           <Routes>
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
-          <FooterComponent />
+          {/*  */}
         </div>
       </Router>
     </>

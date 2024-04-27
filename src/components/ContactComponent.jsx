@@ -1,6 +1,11 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactComponent = () => {
+  const [state, handleSubmit] = useForm("mleqzrnp");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   const contactMethods = [
     {
       icon: (
@@ -96,21 +101,27 @@ const ContactComponent = () => {
             </div>
           </div>
           <div className="w-[40%] mt-8 md:w-[60%] m480:w-[100%]">
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-4"
+              action="https://formspree.io/f/mleqzrnp"
+              method="POST"
+            >
               <div>
                 <label className="font-medium">Full name</label>
-                <input
-                  type="text"
-                  required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                />
+                <input className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" />
               </div>
               <div>
                 <label className="font-medium">Email</label>
                 <input
                   type="email"
-                  required
+                  name="email"
                   className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div>
@@ -120,15 +131,30 @@ const ContactComponent = () => {
                   required
                   className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                 />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
               <div>
                 <label className="font-medium">Message</label>
                 <textarea
+                  name="message"
                   required
                   className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                 ></textarea>
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
-              <button className="w-full px-4 py-2 text-white font-medium bg-black rounded-lg duration-150">
+              <button
+                type="submit"
+                disabled={state.submitting}
+                className="w-full px-4 py-2 text-white font-medium bg-black rounded-lg duration-150"
+              >
                 Submit
               </button>
             </form>
