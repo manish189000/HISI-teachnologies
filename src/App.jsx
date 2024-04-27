@@ -1,11 +1,6 @@
-import "./App.css";
-
+import HomePage from "./pages/HomePage";
 function App() {
-  return (
-    <>
-      <div className="container bg-slate-500">sdfswfsf</div>
-    </>
-  );
+  return <HomePage />;
 }
 
 export default App;
