@@ -5,6 +5,7 @@ import ServiceComponent from "../components/ServiceComponent";
 import AboutUsComponent from "../components/AboutUsComponent";
 import ContactComponent from "../components/ContactComponent";
 import FooterComponent from "../components/FooterComponent";
+import PricingComponent from "../components/PricingComponent";
 const HomePage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HeroSectionComponent />
       <ServiceComponent />
       <AboutUsComponent />
+      <PricingComponent />
       <ContactComponent />
       {/* <FooterComponent /> */}
     </>
