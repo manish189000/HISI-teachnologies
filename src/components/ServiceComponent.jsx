@@ -45,12 +45,12 @@ const ServiceComponent = () => {
       <div className="max-w-screen-xl mx-auto px-10 air:px-6 m480:px-4">
         <div className="max-w-xl space-y-3">
           <h3
-            className=" text-gray-500 font- font-mons
+            className=" text-[#7f7f7f] font- font-mons
            text-lg font-medium"
           >
             Services
           </h3>
-          <p className="text-gray-800 text-4xl sm:text-4xl font-int font-medium">
+          <p className="text-black text-4xl sm:text-4xl font-int font-medium">
             Everything you need to grow
           </p>
           <p className="font-mons">
@@ -63,10 +63,10 @@ const ServiceComponent = () => {
           <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 grid-cols-3 m480:grid-cols-1">
             {features.map((item, idx) => (
               <li key={idx} className="space-y-3">
-                <div className="w-12 h-12 border shadow-lg text-gray-700 text-xl rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 border shadow-lg text-black text-xl rounded-lg flex items-center justify-center">
                   {item.icon}
                 </div>
-                <h4 className="text-lg font-int text-gray-800 font-semibold">
+                <h4 className="text-lg font-int text-black font-semibold">
                   {item.title}
                 </h4>
                 <p className="font-mons">{item.desc}</p>

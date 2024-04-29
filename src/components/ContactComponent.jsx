@@ -71,12 +71,12 @@ const ContactComponent = () => {
         <div className="max-w-screen-xl px-10 air:px-6 m480:px-4 flex justify-between md:flex-col md:gap-4">
           <div className="w-[55%] space-y-3 md:w-[100%]">
             <h3
-              className=" text-gray-500 font-mons
+              className=" text-[#7f7f7f] font-mons
            text-lg font-medium"
             >
               Contact
             </h3>
-            <p className="text-gray-800 text-4xl sm:text-4xl font-int font-medium">
+            <p className="text-black text-4xl sm:text-4xl font-int font-medium">
               Let us know how we can help
             </p>
             <p className="font-mons">
@@ -102,7 +102,7 @@ const ContactComponent = () => {
                 <input
                   type="text"
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-[#7f7f7f]500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                 />
               </div>
               <div>
@@ -110,7 +110,7 @@ const ContactComponent = () => {
                 <input
                   type="email"
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-[#7f7f7f]500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                 />
               </div>
               <div>
@@ -118,7 +118,7 @@ const ContactComponent = () => {
                 <input
                   type="text"
                   required
-                  className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  className="w-full mt-2 px-3 py-2 text-[#7f7f7f]500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                 />
               </div>
               <div>

@@ -22,7 +22,7 @@ const AboutUs2Component = () => {
 
   return (
     <>
-      <div className="mainContainer main-container bg-white py-20 px-10 w-[100%] air:px-6 m480:px-4">
+      <div className="mainContainer bg-white py-20 air:py-0 air:pt-12 air:pb-16 px-10 w-[100%] air:px-6 m480:px-4">
         <div className="empower pb-4 text-[#7f7f7f] text-lg font-mons md:text-base">
           <p>About Us</p>
         </div>

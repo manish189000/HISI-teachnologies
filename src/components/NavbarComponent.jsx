@@ -7,6 +7,9 @@ const NavbarComponent = () => {
   function handleSelect() {
     setIsOpen(!isOpen);
   }
+  function closeSelect() {
+    setIsOpen(false);
+  }
   return (
     <>
       <div className="main-container z-50 w-full my-4 fixed px-4 air:px-3 m480:px-2">
@@ -38,9 +41,13 @@ const NavbarComponent = () => {
             >
               Services
             </Link>
-            <p className="hover:underline transition ease-in-out cursor-pointer ">
+
+            <Link
+              to="/contact"
+              className="hover:underline transition ease-in-out cursor-pointer "
+            >
               Contact
-            </p>
+            </Link>
           </div>
           <div className="getstarted font-int air:hidden">
             <button className=" px-3 py-2 rounded-lg bg-black text-white transition ease-in-out">
@@ -54,22 +61,29 @@ const NavbarComponent = () => {
         {isOpen && (
           <div className="respMenuList font-int font-semibold text-sm px-4 py-4 mt-1 border-[1px] bg-white border-black shadow-lg rounded-2xl hidden air:block m480:py-6">
             <div className="list flex flex-col gap-4 items-end m480:items-center">
-              <Link to="/" className="hover:underline transition ease-in-out">
+              <Link
+                onClick={closeSelect}
+                to="/"
+                className="hover:underline transition ease-in-out"
+              >
                 Home
               </Link>
               <Link
+                onClick={closeSelect}
                 to="/about"
                 className="hover:underline transition ease-in-out"
               >
                 About
               </Link>
               <Link
+                onClick={closeSelect}
                 to="/service"
                 className="hover:underline transition ease-in-out"
               >
                 Services
               </Link>
               <Link
+                onClick={closeSelect}
                 to="/contact"
                 className="hover:underline transition ease-in-out"
               >

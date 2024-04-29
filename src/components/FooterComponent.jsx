@@ -60,15 +60,15 @@ const FooterComponent = () => {
           </div>
           <div className="mt-6 sm:mt-0">
             <ul className="flex items-center space-x-4">
-              <li className="w-10 h-10  rounded-full bg-gray-700 flex items-center justify-center">
+              <li className="w-10 h-10  rounded-full bg-[#7f7f7f] flex items-center justify-center">
                 <FaXTwitter className="w-5 h-5 text-white" />
               </li>
 
-              <li className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center">
+              <li className="w-10 h-10 rounded-full bg-[#7f7f7f] flex items-center justify-center">
                 <FaInstagram className="w-5 h-5 text-white" />
               </li>
 
-              <li className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center">
+              <li className="w-10 h-10 rounded-full bg-[#7f7f7f] flex items-center justify-center">
                 <FiFacebook className="w-5 h-5 text-white" />
               </li>
 

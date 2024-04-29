@@ -23,7 +23,7 @@ const HeroSection2Component = () => {
       <div className="image-container flex relative z-0 ">
         <img
           src={hero2}
-          className="px-10 -translate-y-16 w-[90%] md:w-[100%] mx-auto"
+          className="px-10 air:px-6 m480:px-4 -translate-y-16 w-[100%] md:w-[100%] mx-auto"
         />
       </div>
     </>
