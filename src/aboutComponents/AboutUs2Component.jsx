@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutUsComponent = () => {
+const AboutUs2Component = () => {
   const stats = [
     {
       data: "$4.8m",
@@ -19,14 +19,15 @@ const AboutUsComponent = () => {
       title: "In pure profits for our clients",
     },
   ];
+
   return (
     <>
-      <div className="mainContainer bg-black py-20 px-10 w-[100%] air:px-6 m480:px-4">
+      <div className="mainContainer main-container bg-white py-20 px-10 w-[100%] air:px-6 m480:px-4">
         <div className="empower pb-4 text-[#7f7f7f] text-lg font-mons md:text-base">
           <p>About Us</p>
         </div>
         <div className="build">
-          <h1 className="text-white text-5xl font-medium font-int leading-[1.2] md:text-4xl">
+          <h1 className="text-black text-5xl font-medium font-int leading-[1.2] md:text-4xl">
             <span className="text-[#7f7f7f]">
               Empowering Businesses in the Digital Realm —&nbsp;
             </span>
@@ -40,7 +41,7 @@ const AboutUsComponent = () => {
               {stats.map((item, idx) => (
                 <li
                   key={idx}
-                  className="text-center px-4 border-x-[1px] border-gray-600 text-white "
+                  className="text-center px-4 border-x-[1px] border-gray-600 text-black "
                 >
                   <h4 className="text-4xl font-int">{item.data}</h4>
                   <p className="mt-3 font-mons">{item.title}</p>
@@ -54,4 +55,4 @@ const AboutUsComponent = () => {
   );
 };
 
-export default AboutUsComponent;
+export default AboutUs2Component;

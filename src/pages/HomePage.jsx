@@ -8,12 +8,12 @@ import FooterComponent from "../components/FooterComponent";
 const HomePage = () => {
   return (
     <>
-      <NavbarComponent />
+      {/* <NavbarComponent /> */}
       <HeroSectionComponent />
       <ServiceComponent />
       <AboutUsComponent />
       <ContactComponent />
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </>
   );
 };

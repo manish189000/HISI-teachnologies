@@ -9,16 +9,16 @@ const NavbarComponent = () => {
   }
   return (
     <>
-      <div className="main-container w-full my-4 fixed px-4 air:px-3 m480:px-2">
+      <div className="main-container z-50 w-full my-4 fixed px-4 air:px-3 m480:px-2">
         <div className="navbar w-full border-[1px] bg-white border-black shadow-lg h-16 rounded-2xl flex justify-between px-4 items-center">
-          <div className="logo">
-            <Link to="/">
+          <Link to="/">
+            <div className="logo">
               <span className=" font-bakbak text-3xl">HISI</span>
               <span className=" font-bakbak text-xl font-normal">
                 Technologies
               </span>
-            </Link>
-          </div>
+            </div>
+          </Link>
           <div className="navOpts flex gap-16 font-int font-semibold text-base air:hidden">
             <Link
               to="/"

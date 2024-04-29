@@ -25,7 +25,7 @@ module.exports = {
       md1: { max: "766px" },
       md2: { max: "700" },
       sm: { max: "639px" },
-      sm2: { max: "665" },
+      sm2: { max: "665px" },
       m480: { max: "480px" },
       m481: { max: "448px" },
       m11: { max: "451px" },

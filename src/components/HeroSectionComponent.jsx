@@ -5,7 +5,7 @@ const HeroSectionComponent = () => {
     <>
       <div className="main-container bg-black pt-36 pb-36 px-10 w-[100%] flex items-center air:flex-col air:gap-20 air:px-6 m480:px-4">
         <div className="herocontent w-[60%] air:w-[100%] flex flex-col gap-8 m480:gap-6">
-          <div className="empower text-gray-400 text-lg font-mons md:text-base">
+          <div className="empower text-[#7f7f7f] text-lg font-mons md:text-base">
             <p>Empowering Tomorrow's Innovators</p>
           </div>
           <div className="build">

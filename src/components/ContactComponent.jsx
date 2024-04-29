@@ -88,7 +88,7 @@ const ContactComponent = () => {
               <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center font-mons">
                 {contactMethods.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-x-3">
-                    <div className="flex-none text-gray-400">{item.icon}</div>
+                    <div className="flex-none text-[#7f7f7f]">{item.icon}</div>
                     <p>{item.contact}</p>
                   </li>
                 ))}
