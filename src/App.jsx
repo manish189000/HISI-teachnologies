@@ -11,7 +11,7 @@ function App() {
       <Router>
         <div>
           <NavbarComponent />
-          {/* <FooterComponent /> */}
+
           <Routes>
             <Route path="/" element={<HomePage />} />
           </Routes>

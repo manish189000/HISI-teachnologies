@@ -3,9 +3,9 @@ import { useForm, ValidationError } from "@formspree/react";
 
 const ContactComponent = () => {
   const [state, handleSubmit] = useForm("mleqzrnp");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  // if (state.succeeded) {
+  //   return <p>Thanks for joining!</p>;
+  // }
   const contactMethods = [
     {
       icon: (
